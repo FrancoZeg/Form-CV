@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App13"
+             x:Class="App13.MainPage">
+
+    <StackLayout Padding="20">
+        <!-- Pregunta con Entry -->
+        <Label Text="Nombre:" />
+        <Entry Placeholder="Ingrese su nombre" />
+
+        <!-- Pregunta con Picker -->
+        <Label Text="País:" />
+        <Picker Title="Seleccione su país">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>EE. UU.</x:String>
+                    <x:String>Canadá</x:String>
+                    <x:String>México</x:String>
+                    <!-- Agrega más países aquí -->
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <!-- Pregunta con DatePicker -->
+        <Label Text="Fecha de nacimiento:" />
+        <DatePicker />
+
+        <!-- Pregunta con Switch (Sí/No) -->
+        <Label Text="¿Tiene experiencia laboral?" />
+        <Switch />
+
+        <!-- Botón para enviar el formulario -->
+        <Button Text="Enviar" Clicked="EnviarFormulario" />
+    </StackLayout>
+
+</ContentPage>
