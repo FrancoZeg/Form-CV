@@ -5,11 +5,8 @@
              x:Class="App13.MainPage">
 
     <StackLayout Padding="20">
-        <!-- Pregunta con Entry -->
         <Label Text="Nombre:" />
         <Entry Placeholder="Ingrese su nombre" />
-
-        <!-- Pregunta con Picker -->
         <Label Text="País:" />
         <Picker Title="Seleccione su país">
             <Picker.ItemsSource>
@@ -17,20 +14,17 @@
                     <x:String>EE. UU.</x:String>
                     <x:String>Canadá</x:String>
                     <x:String>México</x:String>
-                    <!-- Agrega más países aquí -->
+                    <x:String>Perú</x:String>
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
 
-        <!-- Pregunta con DatePicker -->
         <Label Text="Fecha de nacimiento:" />
         <DatePicker />
 
-        <!-- Pregunta con Switch (Sí/No) -->
         <Label Text="¿Tiene experiencia laboral?" />
         <Switch />
 
-        <!-- Botón para enviar el formulario -->
         <Button Text="Enviar" Clicked="EnviarFormulario" />
     </StackLayout>
 
